@@ -1,0 +1,176 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: rgb(205, 209, 209);
+    font-size: 100%;
+}
+
+.all_page{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner{
+    display: block;
+    width: 1024px;
+    height: 412px;
+    background-image:url(../image/mazda_logo.png),url(../image/title_final.png);
+    background-size: 200px,auto;
+    background-repeat: no-repeat;
+    background-position: top 120px left 70px,center;
+    background-color: lightgoldenrodyellow;
+
+}
+
+.all_content{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav-and-logo{
+    flex: 1;
+    height: fit-content;
+    background-color: rgba(167, 167, 167, 0.76);
+    border-radius: 25px;
+    margin: 20px;
+    padding:10px 20px;
+}
+
+.nav_list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav_list_item{
+    display: block;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 125%;
+    border-bottom: 3px dashed rgba(255, 255, 255, 0.5);  
+
+}
+
+.nav_list_link{
+    display: block;
+    height: 75px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_list_link:hover{
+    animation: link 0.5s infinite alternate;
+    background-color: rgba(245, 245, 245, 0.76);
+    color: black;
+}
+
+@keyframes link{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.3);}
+}
+
+.main-content{
+    flex:2;
+    margin: 20px;
+    margin-left: 0;
+    padding: 15px 30px;
+    background-color: rgb(75, 80, 82);
+    color: white;
+    border-radius: 20px;
+}
+
+article{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+article>p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+
+h1{
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.795);
+    border-radius: 10px;
+    color: black;
+}
+
+.middle_link{
+    width:125px;
+    height: 35px;
+    line-height: 35px;
+    background-color: black;
+    border-radius: 12px;
+    margin-left: 285px;
+
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.aside{
+    display: flex;
+    margin-top: 15px;
+}
+
+.aside_box{
+    flex: 1;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.aside_box>h3{
+    text-align: center;
+    font-size:150%;
+}
+
+.aside_box>p{
+    padding:0px 10px;
+}
+
+.aside_box_bottom{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 12px;
+    margin-left:115px;
+    margin-bottom: 10px;
+}
+
+.img_icon{
+    width: 200px;
+    height: fit-content;
+    padding-left: 15px;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    border-top: 1px solid rgba(255, 255, 255, 0.479);
+    line-height: 50px;
+    color:white;
+}
+
+.footer>h2,h6{
+    margin: 0;
+    text-align: center;
+}
